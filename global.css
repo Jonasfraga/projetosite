@@ -30,13 +30,18 @@ header {
  text-align: right;
  font-size: 30px;
  color: rgb(180, 30, 30);
- padding-top: 200px; 
+ padding-top: 10px; 
  padding-bottom: 50px;
  padding-right: 100px;
  flex-wrap: wrap;
- 
+ width: 98%;
  justify-content:center;
  align-items:flex-start;
+ position: fixed;
+ top: 0;
+ z-index:1000;
+
+
 }
 .display a{
     font-size: 20px;
@@ -92,14 +97,17 @@ main {
 }
 
 .table2 {
-    width: 0px; 
-    height: 0px; 
+     
     margin-left: 100px;
     flex-direction: column;
     margin-bottom: 60px;
     font-size: 20px;
-    text-align: center;
+    
+}
 
+.img {
+    width: 300px; 
+    height: 100px; 
 }
 
 
@@ -134,7 +142,7 @@ aside {
     height: 60vh;
     bottom: unset;
     justify-content: center;
-    padding-left: 150px;
+    padding-left: 350px;
     padding-top: 80px;   
 }
 
