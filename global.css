@@ -2,7 +2,7 @@
     display: grid;
     height: 500vh;
     width: 100vh;
-    margin-top: 200px;
+    margin-top: 260px;
 grid-template-areas: 
     "header "
     "main "
