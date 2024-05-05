@@ -1,7 +1,8 @@
 .grid {
     display: grid;
-    height: 950vh;
-    width: 40vh;
+    height: 500vh;
+    width: 100vh;
+    margin-top: 200px;
 grid-template-areas: 
     "header "
     "main "
@@ -171,7 +172,7 @@ footer {
     grid-area: footer;
     background-color: black;
     padding-top: 10px;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
     color:  rgb(180, 30, 30);
     text-align: center;
     font-size: 15px;
