@@ -1,6 +1,6 @@
 .grid {
     display: grid;
-    height: 90vh;
+    height: 950vh;
     width: 40vh;
 grid-template-areas: 
     "header "
@@ -99,17 +99,14 @@ main {
 .table2 {
      
     margin-left: 100px;
-    flex-direction: column;
-    margin-bottom: 60px;
-    font-size: 20px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    height:700px;
+}
     
-}
-
-.img {
-    width: 300px; 
-    height: 100px; 
-}
-
 
 aside {
     grid-area: aside;
