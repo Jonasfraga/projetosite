@@ -1,18 +1,19 @@
 .grid {
+
     display: grid;
     height: 500vh;
-    width: 100vh;
+    width: 900v.h;
     margin-top: 260px;
-grid-template-areas: 
-    "header "
-    "main "
-    "section "
-    "section "
-    "section "
-    "footer ";
-    
+    grid-template-areas:
+    "header"
+    "main" 
+    "main"
+    "section"
+    "sction"
+    "footer"
+    ;
 }
-    
+
 @media screen and (min-width: 390px) and (orientation:landscape) {
     .grid {
        width: 100vw;
@@ -23,29 +24,56 @@ grid-template-areas:
  gap: 10px;
  }*/
 
-header {
+.header {
  grid-area: header;
  background-image: url( https://images.squarespace-cdn.com/content/v1/57e0fe32b8a79be8f98b80aa/1570528206784-7UECX6NZWO0M2FLMZFAC/header_image.jpg);
- background-size: 70%;
+ background-size: ;
  background-repeat: round;
  text-align: right;
- font-size: 30px;
+ font-size: 50px;
  color: rgb(180, 30, 30);
- padding-top: 10px; 
- padding-bottom: 50px;
- padding-right: 100px;
+ padding-top: 120px; 
+ padding-bottom: 10px;
+ padding-right: 200px;
+ padding-inline-start: 0px;
  flex-wrap: wrap;
- width: 98%;
- justify-content:center;
- align-items:flex-start;
+ width:100%;
+ justify-content:100%;
  position: fixed;
- top: 0;
- z-index:1000;
+ z-index: index 100%;
 
 
 }
+
+.main {
+    grid-area: main;
+    background-image: url( https://img.freepik.com/foto-gratis/pared-ladrillo-negro-loft-diseno-interiores-pintura-negra-fachada_73152-3906.jpg?size=626&ext=jpg) ;
+    
+    color: grey;
+    font-size: 50px ;
+    padding-left: 0px;
+    padding-top: 350px;
+    padding-right: 0px;
+    width:fit-content;
+}
+
+.section {
+    grid-area: section;
+    background-image:url(https://img.freepik.com/foto-gratis/pared-ladrillo-negro-loft-diseno-interiores-pintura-negra-fachada_73152-3906.jpg?size=626&ext=jpg);
+    padding: 00px;
+    display: flex;
+    flex-wrap: wrap;
+    border-image-width:200;
+    color: grey;
+    margin-bottom: 0px;
+    margin-top: 0px;
+   padding-left: 400px;
+  
+    
+}
+
 .display a{
-    font-size: 20px;
+    font-size: 23px;
     color: gray;
     font-weight: bolder;
     padding-right: 30px;
@@ -56,15 +84,7 @@ header {
     color:rgb(180, 30, 30);
 }
 
-main {
- grid-area: main;
- background-image: url( https://img.freepik.com/foto-gratis/pared-ladrillo-negro-loft-diseno-interiores-pintura-negra-fachada_73152-3906.jpg?size=626&ext=jpg) ;
- 
- color: grey;
- font-size: 20px ;
- color: #808080;
- 
-}
+
 
 .p {
     color: #808080;
@@ -73,12 +93,17 @@ main {
     font-size: 20px;
 }
 
-.h2 {
+.h1 {
+    margin-left: 460px;
+    padding-right: 150px;
+    
+
+}
+
+.main h2 {
     font-size: 40px ;
     color:rgb(180, 30, 30);
     padding-left: 60px;
-
-    
 
 } 
 .h3 {
@@ -88,46 +113,21 @@ main {
     
 }
 
-.table {
-    width: 800px; 
-    height: 100px; 
-    margin-left: 360px;
-    flex-direction: column;
-    margin-bottom: 60px;
-    font-size: 20px;
-    text-align: center;
-
-}
 
 .table2 {
-     
-    margin-left: 100px;
-    margin-bottom: 300px;
+    background-image:url(https://img.freepik.com/foto-gratis/pared-ladrillo-negro-loft-diseno-interiores-pintura-negra-fachada_73152-3906.jpg?size=626&ext=jpg);
+
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 10px;
-    height:700px;
+    margin-left: 100px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-left: 150px;
+     
 }
     
 
-aside {
-    grid-area: aside;
-    background-color: black;
-    color: grey;
-    background-image: image( img/1959284.jpg);
-    justify-content: left;
-
-}
-
-.table{
-    
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-top: 1px;
-    padding-bottom: 10px;
-
-}
 
 .td {
     display: flex;
@@ -138,24 +138,16 @@ aside {
 }
 
 .video {
-    width: 80vh;
-    height: 60vh;
+    grid-area: main;
     bottom: unset;
     justify-content: center;
-    padding-left: 350px;
-    padding-top: 80px;   
-}
-
-section {
-    grid-area: section;
-    background-image:url(https://img.freepik.com/foto-gratis/pared-ladrillo-negro-loft-diseno-interiores-pintura-negra-fachada_73152-3906.jpg?size=626&ext=jpg);
-    padding: 1px;
-    display: flex;
-    flex-wrap: wrap;
-    border-image-width:400;
-    color: grey;
+    padding-left: 300px;
+    padding-top: 80px;
+    padding-bottom: 0px; 
     
 }
+
+
 
 .fildset {
    
@@ -164,13 +156,14 @@ section {
     padding-bottom: 30px;
     padding-top: 50px;
     margin-left: 500px;
-    margin-bottom: 60px;
+    margin-left: 0px;
+    margin-bottom: 30px;
+    
 }
 
 
 
-
-footer {
+.footer {
     grid-area: footer;
     background-color: black;
     padding-top: 10px;
@@ -178,5 +171,7 @@ footer {
     color:  rgb(180, 30, 30);
     text-align: center;
     font-size: 15px;
+    
    
 }   
+
